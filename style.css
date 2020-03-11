@@ -12,8 +12,8 @@
   src: url("/Fonts/Shabnam-Bold-FD.ttf");
 }
 
-*{
-    font-family: "shabnam";
+* {
+  font-family: "shabnam";
 }
 
 html,
@@ -34,99 +34,128 @@ body {
   background: white;
 }
 
-.boxFull{
-    width: 85%;
-    height: 100%;
+.boxFull {
+  width: 85%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.boxTop {
+  width: 97%;
+  height: 15%;
+  margin: 1.5% 1.5% 0 1.5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.boxTop > *:last-child {
+  margin: 0;
+}
+
+.boxCenter {
+  width: 97%;
+  height: 48%;
+  margin: 1.5% 1.5% 0 1.5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.boxBottom {
+  width: 97%;
+  height: 32%;
+  margin: 1.5% 1.5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.boxSmall {
+  width: 25%;
+  height: 100%;
+  background-color: white;
+  margin: 0 1.5% 0 0;
+  display: flex;
+  border-radius: 7px;
+  box-shadow: 0 5px 10px 0 #f0f0f0;
+}
+
+.boxMini {
+  width: 40%;
+  height: 100%;
+  background-color: white;
+  margin: 0 0.75% 0 0;
+  border-radius: 7px;
+  box-shadow: 0 5px 1px 0 #f0f0f0;
+  display: flex;
+  justify-content: center;
+}
+
+.boxLarge {
+  width: 60%;
+  height: 100%;
+  background-color: white;
+  margin: 0 0 0 0.75%;
+  border-radius: 7px;
+  box-shadow: 0 5px 1px 0 #f0f0f0;
+  display: flex;
+  justify-content: center;
+}
+
+.boxIcon {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 7px 0 0 7px;
+}
+
+.boxTextTop {
+  width: 70%;
+  height: 75%;
+  /* background-color: violet; */
+  margin: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.boxTextSubject {
+  width: 18%;
+  height: 90%;
+  border-bottom: 2px solid #6257e4;
+  display: flex;
+  font-size: 0.9vw;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.itemBottomBox{
+    margin-right: 20px; 
+    width: 18%; 
+    height: 100%; 
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: flex-end;
+    color: #bcbcbc;
+    font-size: 0.7vw;
 }
 
-.boxTop{
-    width: 97%;
-    height: 15%;
-    margin: 1.5% 1.5% 0 1.5%;
+.boxNumber{
+    width: 15%; 
+    height: 25%;
+    background-color: #f0f0f0;
+    margin-right: 5px;
+    margin-bottom: 15px;
+    border-radius: 5px;
     display: flex;
-    justify-content:space-between;
-    align-items: center;
-}
-
-.boxTop>*:last-child{
-    margin: 0;
-}
-
-.boxCenter{
-    width: 97%;
-    height: 48%;
-   margin: 1.5% 1.5% 0 1.5%;
-    display: flex;
-    justify-content: space-between;
-}
-
-.boxBottom{
-    width: 97%;
-    height: 32%;
-    margin: 1.5% 1.5%;
-    display: flex;
-    justify-content: space-between;
-}
-
-.boxSmall{
-    width: 25%;
-    height: 100%;
-    background-color: white;
-    margin: 0 1.5% 0 0;
-    display: flex;
-    border-radius: 7px;
-    box-shadow:0 5px 10px 0 #f0f0f0;
-}
-
-.boxMini{
-    width: 40%;
-    height: 100%;
-    background-color: white;
-    margin: 0 0.75% 0 0;
-    border-radius: 7px;
-    box-shadow:0 5px 1px 0 #f0f0f0;
-    display: flex;
-    justify-content: center;
-
-}
-
-.boxLarge{
-    width: 60%;
-    height: 100%;
-    background-color: cyan;
-    margin: 0 0 0 0.75%;
-    border-radius: 7px;
-    box-shadow:0 5px 1px 0 #f0f0f0;
-
-}
-
-.boxIcon{
-    width: 25%;
-    height: 100%;
-    display: flex;
+    color: #bcbcbc;
     justify-content: center;
     align-items: center;
-    border-radius: 7px 0 0 7px;
+
 }
 
-.boxTextTop{
-    width: 70%;
-    height: 75%;
-    /* background-color: violet; */
-    margin: 5%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-end;
-}
-.boxTextSubject{
-    width: 90%;
-    height: 30%;
-    background-color: yellow;
-    display: flex;
-    justify-content: space-between;
-}
