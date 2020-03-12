@@ -16,10 +16,11 @@
   font-family: "shabnam";
 }
 
-.fontShabnamLight{
-    font-family: "shabnam_light";
+.fontShabnamLight {
+  font-family: "shabnam_light";
 }
 
+/* fix background in body */
 html,
 body {
   width: 100%;
@@ -30,7 +31,7 @@ body {
   background-attachment: fixed;
   margin: 0;
 }
-
+/* box menu */
 .boxMenu {
   height: 100%;
   width: 15%;
@@ -40,7 +41,25 @@ body {
   justify-content: center;
   flex-direction: column;
 }
+/* The class is for menu text */
+.textMenu {
+  margin-top: 20px;
+  width: 70%;
+  display: flex;
+  justify-content: flex-end;
+}
 
+/* The class is for menu timer */
+.boxTimer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: 30%;
+}
+
+/* full box */
 .boxFull {
   width: 85%;
   height: 100%;
@@ -50,6 +69,7 @@ body {
   align-items: flex-end;
 }
 
+/* The class is for box top in full box*/
 .boxTop {
   width: 97%;
   height: 15%;
@@ -63,22 +83,6 @@ body {
   margin: 0;
 }
 
-.boxCenter {
-  width: 97%;
-  height: 48%;
-  margin: 1.5% 1.5% 0 1.5%;
-  display: flex;
-  justify-content: space-between;
-}
-
-.boxBottom {
-  width: 97%;
-  height: 32%;
-  margin: 1.5% 1.5%;
-  display: flex;
-  justify-content: space-between;
-}
-
 .boxSmall {
   width: 25%;
   height: 100%;
@@ -89,6 +93,48 @@ body {
   box-shadow: 0 5px 10px 0 #f0f0f0;
 }
 
+/* box for icon in box small */
+.boxIcon {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 7px 0 0 7px;
+}
+
+
+/* box for text in box top */
+.boxTextTop {
+  width: 70%;
+  height: 75%;
+  margin: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+
+/* center box in full box */
+.boxCenter {
+  width: 97%;
+  height: 48%;
+  margin: 1.5% 1.5% 0 1.5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* bottom box in full box */
+.boxBottom {
+  width: 97%;
+  height: 32%;
+  margin: 1.5% 1.5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* mini box for center and bottom box in full box */
 .boxMini {
   width: 40%;
   height: 100%;
@@ -100,6 +146,18 @@ body {
   justify-content: center;
 }
 
+/* box for subject text in the mini box */
+.boxTextSubject {
+  width: 16%;
+  height: 90%;
+  border-bottom: 2px solid #6257e4;
+  display: flex;
+  font-size: 0.9vw;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+/* large box for center and bottom box in full box */
 .boxLarge {
   width: 60%;
   height: 100%;
@@ -111,71 +169,28 @@ body {
   justify-content: center;
 }
 
-.boxIcon {
-  width: 25%;
+/* item for bottom box in the full box */
+.itemBottomBox {
+  margin-right: 20px;
+  width: 19%;
   height: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 7px 0 0 7px;
-}
-
-.boxTextTop {
-  width: 70%;
-  height: 75%;
-  margin: 5%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-end;
-}
-
-.boxTextSubject {
-  width: 16%;
-  height: 90%;
-  border-bottom: 2px solid #6257e4;
-  display: flex;
-  font-size: 0.9vw;
   justify-content: flex-end;
   align-items: flex-end;
+  color: #bcbcbc;
+  font-size: 0.7vw;
 }
 
-.itemBottomBox{
-    margin-right: 20px; 
-    width: 19%; 
-    height: 100%; 
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    color: #bcbcbc;
-    font-size: 0.7vw;
+/* box number for item in the box bottom */
+.boxNumber {
+  width: 15%;
+  height: 25%;
+  background-color: #f0f0f0;
+  margin-right: 5px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  display: flex;
+  color: #bcbcbc;
+  justify-content: center;
+  align-items: center;
 }
-
-.boxNumber{
-    width: 15%; 
-    height: 25%;
-    background-color: #f0f0f0;
-    margin-right: 5px;
-    margin-bottom: 15px;
-    border-radius: 5px;
-    display: flex;
-    color: #bcbcbc;
-    justify-content: center;
-    align-items: center;
-}
-.boxTimer{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 100%;
-    height: 30%;
-}
-
-.textMenu{
-margin-top: 20px; 
-width: 70%;
-display: flex; 
-justify-content: flex-end;
-}
-
